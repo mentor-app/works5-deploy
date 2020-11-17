@@ -46,7 +46,7 @@ log "Upgrade pip"
 python3 -m pip install --upgrade pip
 
 # Install Django & Pillow & Requests
-log "Install Django & Pillow"
+log "Install Django & Pillow & Requests"
 python3 -m pip install Django
 python3 -m pip install Pillow
 python3 -m pip install requests
