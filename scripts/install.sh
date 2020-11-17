@@ -59,5 +59,6 @@ log "Install Gunicorn"
 log "Clone Sample Django Project"
 git clone https://github.com/dev-heeham/works5-deploy.git
 
+cd ~
 source ~/.bash_profile
 log "[Nginx - Gunicorn - Python Django] Installation Successful"
