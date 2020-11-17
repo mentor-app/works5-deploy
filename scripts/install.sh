@@ -37,18 +37,27 @@ pyenv global 3.8.5
 log "Install Nginx"
 sudo apt-get install -y nginx
 
+# Create Virtual Environment
+python3 -m venv ~/env
+cd ~/env && source bin/activate
+
 # Upgrade pip
 log "Upgrade pip"
 python3 -m pip install --upgrade pip
 
-# Install Django & Pillow
+# Install Django & Pillow & Requests
 log "Install Django & Pillow"
 python3 -m pip install Django
 python3 -m pip install Pillow
+python3 -m pip install requests
 
 # Install Gunicorn
 log "Install Gunicorn"
 python3 -m pip install gunicorn
+
+# Clone Sample Django Project
+log "Clone Sample Django Project"
+git clone https://github.com/dev-heeham/works5-deploy.git
 
 source ~/.bash_profile
 log "[Nginx - Gunicorn - Python Django] Installation Successful"
