@@ -57,7 +57,7 @@ log "Install Gunicorn"
 
 # Clone Sample Django Project
 log "Clone Sample Django Project"
-git clone https://github.com/dev-heeham/works5-deploy.git
+git clone https://github.com/mentor-app/beParents.git
 
 cd ~
 source ~/.bash_profile
